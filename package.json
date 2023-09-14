@@ -18,7 +18,24 @@
         "command": "extension.sayHello",
         "title": "Hello World"
       }
-    ]
+    ],
+    "keybindings": [
+        {
+            "command": "extension.sayHello",
+            "key": "ctrl+f10",
+            "mac": "cmd+f10",
+            "when": "editorTextFocus"
+        }
+    ],
+    "menus": {
+        "editor/context": [
+            {
+                "when": "editorFocus",
+                "command": "extension.sayHello",
+                "group": "navigation"
+            }
+        ]
+    }
   },
   "scripts": {
     "lint": "eslint .",
